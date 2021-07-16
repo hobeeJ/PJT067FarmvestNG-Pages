@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="icon" type="image" href="./Assets/img/Logo 2.png">
+    <link rel="stylesheet" href="./profile.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <header>     
+        <nav>
+            <div id="nav-top">
+                <div id="menu-btn">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <img src= "./Assets/img/FarmvestNG Logo.svg" alt="">
+                            <!-- nav links -->
+            <ul id="links">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="#">Investments</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li class="nav-active"><a href="./profile.html">Profile</a></li>
+            </ul>
+            </div>
+        </nav>
+
+
+        <aside>
+            <div class="sidebar">
+                <ul id="side">
+                    <li class="nav-active"><a href="">Dashboard</a></li>
+                    <li><a href="#">Your Farms</a></li>
+                    <li ><a href="#">Profile</a></li>
+                </ul>
+            </div>
+        </aside>
+
+    </header>
+
+    <section class="user">
+        <div class="user-profile">
+            <figure class="prof-pic">
+                <img src="./Assets/img/profile picture.png" alt="">
+            </figure>
+
+            <div class="file-upload">
+
+                <input type="file" name="profile picture" class="prof-pics" width="300px" height="250px">
+            </div>  
+            <div class="details">
+                <h3>Sola Brown</h3>
+                <p>Livestock/Crop Farmer</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="input-box">
+        <form class="field-1">
+            <input type="name" placeholder="Sola Brown" id="name" class="name" required>
+        </form>
+        <form class="field-2">
+            <input type="phone" placeholder="09087342103" id="phone" required>
+        </form>
+        <form class="field-3">
+            <input type="address" placeholder="Address" id="address" class="address" required disabled>
+        </form>
+        <form class="field-4" action="">
+            <input type="button" value="VERIFY ACCOUNT" class="btn" id="button" disabled>
+        </form>
+    </div>
+
+    <!-- Pop Up Modal Section-->
+    <div class="bg-modal">
+        <div class="modal-content">
+            <h3>Verify Phone Number</h3>
+            <p>An OTP would be sent to your phone number. 
+                Fill it in here to verify your phone number Sola Brown
+            </p>
+            <input type="text" placeholder="Enter OTP" id="OTP" required>
+            <a href="../Verified/verified.html"><input type="button" value="DONE" class="btn2" id="btn2" disabled></a>
+        </div>
+    </div>
+
+    <!-- jqery -->
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- javascript file -->
+    <script src="./profile.js"></script>
+
+</body>
+</html>

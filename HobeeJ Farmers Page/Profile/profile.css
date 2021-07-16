@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction:column;
+    height:auto;
+    margin: 0rem;
+}
+
+#menu-btn {
+    padding: 5px;
+    cursor: pointer;
+    align-self: center;
+    margin-top: -0.5rem;
+    margin-left: 0.5rem;
+}
+
+#nav-top {
+    display: flex;
+    padding: 20px 20px 20px 10px;
+  }
+
+#nav-top img {
+margin-left: 2rem;
+height: 3rem;
+}
+
+nav {
+    background: linear-gradient(
+      180deg,
+      rgba(78, 149, 37, 0.13),
+      rgba(78, 149, 37, 0.07)
+    );
+    flex: 0 0 auto;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li a {
+    display: flex;
+    color:#403C3C;
+    background: transparent;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  nav ul li a:hover {
+    color: #4e9525;
+  }
+
+  nav ul li:last-of-type a:last-of-type {
+    border-bottom: 0.2rem solid #4e9525;
+  }
+
+#links {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10rem;
+    margin-top: 0rem;
+}
+
+  
+  .bar1,
+  .bar2,
+  .bar3 {
+    height: 4px;
+    width: 27px;
+    background:#5B5252;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .turn .bar1 {
+    transform: rotate(-45deg) translate(-7px, 6px);
+  }
+  
+  .turn .bar2 {
+    opacity: 0;
+  }
+  
+  .turn .bar3 {
+    transform: rotate(45deg) translate(-7px, -5.5px);
+  }
+
+  .sidebar ul {
+    list-style-type: none;
+    text-align: center;
+    width: 150px;
+    margin: 7rem 0 0 0rem;
+    background-color: white;
+    background-size:cover;
+    box-shadow: 0px 6.82096px 20.4629px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 17.0524px 17.0524px 0px;
+    position: absolute;
+  }
+  
+  .sidebar ul li:first-of-type a:first-of-type{
+    color: #4e9525;
+  }
+
+  #side {
+    display: none;
+  }
+
+  .sidebar ul li a {
+    color:#605E5C;
+    display: block;
+    text-decoration: none;
+    padding: 60px 20px 0px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 0.85262px solid #BDD8AD;
+  }
+
+  .sidebar ul li a:active {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .sidebar ul li a:hover {
+    background-color: #f4fdef;
+  }
+
+  .sidebar ul li:last-of-type a:last-of-type {
+    border-bottom: none;
+    padding-top: 60px 20px;
+    margin-bottom: 0;
+  }
+
+  .user-profile {
+    display:flex;
+    text-align: center;
+    margin: 2.5rem 0 0 30rem;
+
+  }
+
+  figure.prof-pic img {
+    height: 10rem;
+  }
+  
+  .file-upload {
+    height: 3rem;
+    width: 3rem;
+    margin-top: 3.2rem;
+    margin-left: -1.9rem;
+    position: relative;
+    border: 50%;
+    background: url(./Assets/img/Camera\ Icon.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  
+  .prof-pics {
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    outline: none;
+    color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.5s;
+    height: 5rem;
+  }
+  
+  .prof-pics::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+
+   .details {
+    position:relative;
+    margin-left: 2rem;
+    margin-top: 3rem;
+  }
+
+  .details h3 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #4e9525;
+  }
+
+  .details p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4e9525;
+  }
+
+  .input-box {
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 0rem;
+  }
+
+   input#name, input#phone, input#address {
+    width: 430px;
+    height: 45px;
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgba(78, 149, 37, 0.38);
+}
+
+  input[type=name], input[type=phone], input[type=address] {
+    background-color: #fff;
+    padding: 10px 20px;
+    height: 40px;
+    width: 553px;
+    border: none;
+    font-size: 14px;
+  }
+
+  input#name:focus, input#phone:focus, input#address:focus {
+    outline: none;
+  }
+
+
+
+  input#name::placeholder, input#phone::placeholder, input#address::placeholder{
+    color: black;
+  }
+
+  input#button {
+    width: 350px;
+    height: 45px;
+    background-color: #4E9525;
+    margin-bottom: 0.5rem;
+    border: none;
+    margin-top: 3rem;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  input#button:hover {
+    outline: none;
+    background-color: #BDD8AD;
+    color: #4e9525;
+  }
+
+  input#button:active {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  input#button:disabled {
+    background-color: #dddddd;
+    color: #4e9525;
+    cursor:not-allowed;
+  }
+
+  .bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    width: 500px;
+    height: 350px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  .modal-content h3 {
+    margin: 1.5rem 0 0 0;
+    text-align: center;
+    color: #4e9525;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .modal-content p {
+    margin: 1rem 3rem 3rem 3rem;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  input#OTP {
+    height: 65px;
+    width: 300px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 2px #4e9525 solid;
+  }
+
+  input[type=text] {
+    position: relative;
+    background-color: #fff;
+    padding: 0;
+    height: 40px;
+    width: 553px;
+    font-size: 14px;
+  }
+
+  input#OTP:focus {
+    outline: none;
+    background-color: #fff;
+  }
+
+  input#OTP::placeholder {
+    color: #4e9525;
+    position: absolute;
+    background-color: #fff;
+  }
+
+  input#btn2 {
+    width: 250px;
+    height: 45px;
+    background-color: #4E9525;
+    margin-bottom: 0.5rem;
+    border: none;
+    margin-top: 2rem;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  input#btn2:hover {
+    outline: none;
+    background-color: #BDD8AD;
+    color: #4e9525;
+  }
+
+  input#btn2:active {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  input#btn2:disabled {
+    background-color: #dddddd;
+    color: #4e9525;
+    cursor:not-allowed;
+  }
+
+
+  /* MOBILE VIEW */
+
+/*Media Query*/
+@media screen and (max-width:768px) {
+  #menu-btn {
+    padding: 5px;
+    cursor: pointer;
+    align-self: center;
+    margin-top: -0.5rem;
+    margin-left: 0.5rem;
+}
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    height: 3px;
+    width: 23px;
+  }
+
+  nav ul {
+    display: flex !important;
+    justify-self: flex-end;
+  }
+  
+  #nav-top {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 20px 20px 10px;
+  }
+
+  #nav-top img {
+    margin-left: 2rem;
+    margin-top: 0rem;
+    height: 2.5rem;
+    }
+
+    nav ul li a {
+      display: flex;
+      color:#403C3C;
+      padding: 10px 8px 10px 10px;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    #links {
+      margin-left: 0;
+    }
+
+    .turn .bar1 {
+      transform: rotate(-45deg) translate(-6px, 2px);
+    }
+      
+    .turn .bar3 {
+      transform: rotate(45deg) translate(-8px, -6px);
+    }
+
+    .sidebar ul {
+    margin: 0rem 0 0 0rem;
+    width: 100%;
+    position: relative;
+    border-radius: 0px 10px 10px 0px;
+
+  }
+
+  .sidebar ul li a {
+    text-align: center;
+    color:#605E5C;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 0.85262px solid #BDD8AD;
+  }
+
+    .user-profile {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+    }
+
+    figure.prof-pic img {
+      margin-top: 1rem;
+      margin-left: 6.5rem;
+    }
+
+    .details {
+      margin-left: 6rem;
+      margin-top: 0rem;
+    }
+
+    input#name, input#phone, input#address {
+      width: 300px;
+    }
+
+    input#button {
+      width: 250px;
+      margin-top: 3rem;
+    }
+
+    .modal-content {
+      width: 300px;
+      height: 250px;
+    }
+
+    .modal-content h3 {
+      margin: 1rem 0 0 0
+    }
+
+    .modal-content p {
+      margin: 0.5rem 0.5rem 1rem 0.5rem;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    input#OTP {
+      height: 45px;
+      width: 250px;
+    }
+
+    input#btn2 {
+      width: 150px;
+      height: 45px;
+      margin-top: 1rem;
+    }
+}
